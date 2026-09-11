@@ -53,6 +53,24 @@ class FPS:
         return self.fps
 
 
-def draw_faces(frame, boxes, color=(0, 255, 0), thickness=2):
+def draw_faces(frame, boxes, color=(0, 255, 0), thickness=2, corner_ratio=0.2):
+    """Draw corner brackets instead of a full rectangle."""
     for (x, y, w, h) in boxes:
-        cv2.rectangle(frame, (x, y), (x + w, y + h), color, thickness)
+        cx = int(w * corner_ratio)
+        cy = int(h * corner_ratio)
+
+        # top-left
+        cv2.line(frame, (x, y), (x + cx, y), color, thickness)
+        cv2.line(frame, (x, y), (x, y + cy), color, thickness)
+
+        # top-right
+        cv2.line(frame, (x + w, y), (x + w - cx, y), color, thickness)
+        cv2.line(frame, (x + w, y), (x + w, y + cy), color, thickness)
+
+        # bottom-left
+        cv2.line(frame, (x, y + h), (x + cx, y + h), color, thickness)
+        cv2.line(frame, (x, y + h), (x, y + h - cy), color, thickness)
+
+        # bottom-right
+        cv2.line(frame, (x + w, y + h), (x + w - cx, y + h), color, thickness)
+        cv2.line(frame, (x + w, y + h), (x + w, y + h - cy), color, thickness)
