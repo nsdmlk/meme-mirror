@@ -1,0 +1,16 @@
+{
+  "cat_001.jpg": {"emotion": "neutral",   "gesture": "none",            "energy": "tired"},
+  "cat_002.jpg": {"emotion": "happiness", "gesture": "thumbs_up",       "energy": "playful"},
+  "cat_003.jpg": {"emotion": "neutral",   "gesture": "point_up",        "energy": "confident"},
+  "cat_004.jpg": {"emotion": "anger",     "gesture": "middle_finger",   "energy": "confident"},
+  "cat_005.jpg": {"emotion": "neutral",   "gesture": "none",            "energy": "confident"},
+  "cat_006.jpg": {"emotion": "neutral",   "gesture": "pointing_fingers","energy": "shy"},
+  "cat_007.jpg": {"emotion": "happiness", "gesture": "pointing_fingers","energy": "playful"},
+  "cat_008.jpg": {"emotion": "sadness",   "gesture": "none",            "energy": "tired"},
+  "cat_009.jpg": {"emotion": "surprise",  "gesture": "none",            "energy": "shocked"},
+  "cat_010.jpg": {"emotion": "neutral",   "gesture": "facepalm",        "energy": "tired"},
+  "cat_011.jpg": {"emotion": "neutral",   "gesture": "pray",            "energy": "calm"},
+  "cat_012.jpg": {"emotion": "contempt",  "gesture": "none",            "energy": "contemptuous"},
+  "cat_013.jpg": {"emotion": "happiness", "gesture": "none",            "energy": "laughter"},
+  "cat_014.jpg": {"emotion": "neutral",   "gesture": "none",            "energy": "funnuy"}
+}
